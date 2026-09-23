@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wing Kian · Interview Discussion</title>
+<meta name="description" content="面试讨论：想请教的问题、合作伙伴沟通建议与跟进方式。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23172238'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='22' font-family='sans-serif' fill='%23d9f77b'%3EW%3C/text%3E%3C/svg%3E">
+<style>
+/* Edit colours here. This file works offline without dependencies. */
+:root{--ink:#172238;--muted:#526079;--paper:#f5f7fc;--line:#dce2ed;--accent:#d9f77b;--purple:#5950c8;--rail:254px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;line-height:1.65}button,select{font:inherit}button,a,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #7064ef;outline-offset:5px}.skip{position:fixed;top:-80px;left:15px;background:white;padding:10px;z-index:10}.skip:focus{top:10px}
+.rail{position:fixed;inset:0 auto 0 0;width:var(--rail);background:var(--ink);color:white;padding:38px 26px;display:flex;flex-direction:column;z-index:3}.identity{display:flex;gap:13px;align-items:center}.monogram{width:42px;height:42px;border:1px solid #697285;border-radius:50%;display:grid;place-items:center;color:var(--accent);font-weight:700}.identity strong{display:block;font-size:17px}.identity small{display:block;color:#b5bfd2;font-size:13px}.rail-label{font-size:12px;letter-spacing:.16em;color:#aebad0;margin:64px 0 18px}.nav{display:grid;gap:8px}.nav a{text-decoration:none;padding:13px 11px;display:flex;align-items:center;gap:13px;border-radius:8px;border:1px solid transparent;transition:background .2s}.nav a:hover{background:#24314b}.nav a[aria-current="page"]{background:#2d3b51;border-color:#546447}.nav a[aria-current="page"] .nav-n{color:var(--accent)}.nav-n{font-size:13px;color:#b2bed2;font-variant-numeric:tabular-nums}.nav .zh{font-size:15px;display:block}.nav .en{font-size:12px;color:#b9c6db;display:block;line-height:1.4}.rail-bottom{margin-top:auto;padding-top:40px;color:#bac6da;font-size:13px}.rail-bottom strong{display:block;color:var(--accent);font-size:14px;font-weight:500;margin-top:5px}
+.workspace{margin-left:var(--rail);min-height:100vh;display:flex;flex-direction:column}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 6%;padding:26px 0;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;font-weight:650;letter-spacing:.14em;text-transform:uppercase}.topbar .eyebrow{color:var(--muted)}.tools{display:flex;align-items:center;gap:9px}.tools label{font-size:14px}.tools select,.print{border:1px solid var(--line);background:transparent;padding:7px 10px;border-radius:6px;font-size:14px;color:var(--ink)}main{padding:38px 6% 24px;flex:1}.slide{max-width:1150px;margin:auto;animation:arrive .24s ease}.slide[hidden]{display:none}.section-label{display:flex;align-items:center;gap:10px;color:var(--purple);font-size:13px;font-weight:650;letter-spacing:.06em}.section-label::before{content:"";width:24px;height:3px;background:var(--purple)}h1,h2,h3,p{margin:0}h1{font-size:clamp(27px,3vw,44px);line-height:1.3;letter-spacing:-.025em;margin:17px 0 8px;font-weight:700}.title-en{font-size:clamp(17px,1.6vw,23px);color:var(--muted);line-height:1.4}.intro{margin-top:20px;color:var(--muted);max-width:780px;font-size:16px}.intro .en{display:block;font-size:15px;margin-top:3px}.content{margin-top:33px}.question{display:grid;grid-template-columns:55px 1fr;gap:12px;padding:23px 0;border-top:1px solid var(--line)}.qnumber{font-size:28px;font-weight:350;color:var(--purple);line-height:1.3}.question h2{font-size:20px;line-height:1.65;font-weight:600}.question p{font-size:16px;line-height:1.6;color:var(--muted);margin-top:6px}.question:last-child{border-bottom:1px solid var(--line)}.footnote{font-size:13px;color:var(--muted);margin-top:22px}.footnote .en{display:block}
+.process{display:grid;grid-template-columns:1fr 1fr;column-gap:46px;row-gap:27px}.step{border-top:1px solid var(--line);padding-top:17px;display:grid;grid-template-columns:32px 1fr;gap:13px}.step-number{font-size:14px;color:var(--purple);font-weight:600;padding-top:4px}.step h2{font-size:20px}.step .en{display:block;color:var(--muted);font-size:16px;font-weight:400}.step p{font-size:16px;margin-top:10px;color:var(--muted)}.focus{margin-top:32px;border-left:4px solid var(--purple);padding:14px 22px;background:#eaeefa}.focus .zh{font-size:18px;font-weight:600;display:block}.focus .en{font-size:16px;color:var(--muted);display:block;margin-top:2px}.source{font-size:13px;color:var(--muted);margin-top:22px}
+.scenario{border-top:1px solid var(--line);padding-top:18px;margin-bottom:24px;font-size:16px}.scenario strong{font-size:13px;color:var(--purple);display:block;margin-bottom:5px}.scenario .en{display:block;color:var(--muted)}.script{display:grid;grid-template-columns:1fr 1fr;gap:35px}.script-column{padding:25px 29px;background:white;border-radius:3px;border-top:4px solid var(--purple)}.script-column.english{background:var(--ink);color:white;border-color:var(--accent)}.language-label{font-size:12px;letter-spacing:.12em;color:var(--purple);margin-bottom:15px;font-weight:650}.english .language-label{color:var(--accent)}.script-column p{font-size:19px;line-height:1.8;margin-bottom:18px}.script-column p:last-child{margin:0}.script-column em{font-style:normal;color:var(--purple);font-weight:600}.english em{color:var(--accent)}
+.proposal-list{border-top:1px solid var(--line)}.proposal-row{display:grid;grid-template-columns:205px 1fr;gap:25px;padding:18px 0;border-bottom:1px solid var(--line)}.proposal-row h2{font-size:18px}.proposal-row h2 .en{font-size:14px;color:var(--muted);font-weight:400;display:block}.proposal-row p{font-size:16px}.proposal-row p .en{display:block;color:var(--muted);font-size:15px;margin-top:4px}.columns{display:grid;grid-template-columns:1fr 1fr;gap:40px}.column h2{font-size:21px;padding-bottom:16px;border-bottom:2px solid var(--ink)}.column h2 .en{display:block;font-size:15px;color:var(--muted);font-weight:400}.notes{list-style:none;padding:0;margin:0}.notes li{padding:16px 0;border-bottom:1px solid var(--line)}.notes .zh{display:block;font-size:17px}.notes .en{display:block;color:var(--muted);font-size:15px;margin-top:4px}.closing{font-size:18px;margin-top:26px;color:var(--purple)}.closing .en{display:block;font-size:16px;margin-top:5px}
+footer{margin:15px 6% 0;padding:22px 0 25px;border-top:1px solid var(--line);display:flex;align-items:center;gap:20px;justify-content:space-between}.counter{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}.counter b{color:var(--ink)}.paging{display:flex;gap:9px}.paging button{border:1px solid var(--line);border-radius:6px;padding:10px 18px;background:white;color:var(--ink);font-size:14px}.paging button:last-child{background:var(--ink);color:white;border-color:var(--ink)}.paging button:disabled{opacity:.35;cursor:default}.progress{position:fixed;bottom:0;left:var(--rail);right:0;height:4px;background:#e0e5ee}.progress span{display:block;height:100%;background:var(--purple);transition:width .25s}.keyboard{font-size:13px;color:var(--muted)}
+body[data-language="zh"] .en,body[data-language="en"] .zh{display:none!important}body[data-language="en"] .title-en{font-size:clamp(27px,3vw,44px);line-height:1.3;letter-spacing:-.025em;color:var(--ink);margin:17px 0 8px;font-weight:700}body[data-language="en"] .script,body[data-language="zh"] .script{grid-template-columns:1fr}body[data-language="en"] .script-column p,body[data-language="zh"] .script-column p{font-size:23px}body[data-language="en"] .question p{font-size:20px;color:var(--ink);margin:0}body[data-language="en"] .nav .en{display:block!important;font-size:14px;color:white}body[data-language="en"] .step h2 .en,body[data-language="en"] .proposal-row h2 .en,body[data-language="en"] .column h2 .en{font-size:20px;color:var(--ink);font-weight:600}
+@keyframes arrive{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media(min-width:1550px){main{padding-top:55px}.question{padding:28px 0}.question h2{font-size:23px}.question p{font-size:18px}.content{margin-top:43px}}
+@media(max-width:1050px){:root{--rail:210px}.rail{padding:30px 17px}.topbar,footer{margin-left:5%;margin-right:5%}main{padding-left:5%;padding-right:5%}.script{gap:20px}.script-column{padding:22px}.script-column p{font-size:17px}.keyboard{display:none}.proposal-row{grid-template-columns:170px 1fr}}
+@media(max-width:740px){:root{--rail:0px}.rail{position:relative;width:auto;padding:18px 20px}.identity{gap:10px}.monogram{width:35px;height:35px}.identity small{display:none}.rail-label,.rail-bottom{display:none}.nav{display:flex;gap:5px;margin-top:18px;overflow:auto}.nav a{flex-shrink:0;padding:8px 10px;gap:7px}.nav .zh{font-size:13px}.nav .en{display:none}.nav-n{font-size:12px}.topbar{padding:18px 0;align-items:flex-start}.topbar .eyebrow{font-size:10px;max-width:130px}.tools label{display:none}.tools{gap:6px}.tools select,.print{font-size:13px;padding:6px 8px}main{padding-top:25px}.content{margin-top:24px}.question{grid-template-columns:34px 1fr;padding:20px 0}.qnumber{font-size:23px}.question h2{font-size:18px}.question p{font-size:15px}.process,.columns,.script{grid-template-columns:1fr;gap:22px}.proposal-row{grid-template-columns:1fr;gap:8px}.step h2{font-size:19px}.script-column p{font-size:18px}.focus{padding:12px 16px}.footnote{font-size:13px}footer{gap:10px}.paging button{padding:9px 13px}}
+@media print{@page{size:A4 landscape;margin:14mm}body{background:white!important}.rail,.topbar,footer,.progress,.skip{display:none!important}.workspace{margin:0}main{padding:0}.slide,.slide[hidden]{display:block!important;animation:none;break-after:page;max-width:none;padding:10px 0}.slide:last-child{break-after:auto}h1{font-size:27px}.title-en{font-size:18px}.content{margin-top:20px}.question{padding:16px 0}.question h2{font-size:18px}.question p,.step p,.script-column p{font-size:15px}.script-column.english{background:#edf0f8;color:var(--ink)}.english em,.english .language-label{color:var(--purple)}.script{grid-template-columns:1fr 1fr}.process,.columns{grid-template-columns:1fr 1fr}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.footnote,.source{font-size:11px}.proposal-row{padding:12px 0}.notes li{padding:12px 0}}
+</style>
+</head>
+<body data-language="both">
+<a class="skip" href="#main">Skip to content / 跳至正文</a>
+<aside class="rail">
+<div class="identity"><div class="monogram" aria-hidden="true">W</div><div><strong>Wing Kian</strong><small>Interview discussion</small></div></div>
+<p class="rail-label">DISCUSSION NOTES</p>
+<nav class="nav" aria-label="Discussion sections">
+<a href="#questions" aria-current="page"><span class="nav-n">01</span><span><span class="zh">想请教的问题</span><span class="en" lang="en">My questions</span></span></a>
+<a href="#approach"><span class="nav-n">02</span><span><span class="zh">我的沟通建议</span><span class="en" lang="en">My proposed approach</span></span></a>
+<a href="#example"><span class="nav-n">03</span><span><span class="zh">回应示例</span><span class="en" lang="en">A response example</span></span></a>
+<a href="#proposal"><span class="nav-n">04</span><span><span class="zh">书面方案</span><span class="en" lang="en">Written proposals</span></span></a>
+<a href="#followup"><span class="nav-n">05</span><span><span class="zh">会议跟进</span><span class="en" lang="en">Meeting follow-up</span></span></a>
+</nav>
+<div class="rail-bottom">Current focus<strong>Claude on<br>Amazon Bedrock</strong></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><div class="eyebrow">Questions &amp; proposed approach</div><div class="tools"><label for="language">语言 / Language</label><select id="language" aria-label="Display language"><option value="both">中 / EN</option><option value="zh">中文</option><option value="en">English</option></select><button class="print" id="print" type="button">PDF / 打印</button></div></header>
+<main id="main">
+<!-- CONTENT: Edit Chinese (.zh) and English (.en) directly below. -->
+<section class="slide" id="questions" aria-labelledby="title-questions">
+<div class="section-label"><span class="zh">向面试官请教</span><span class="en" lang="en">QUESTIONS FOR THE INTERVIEWER</span></div>
+<h1 class="zh" id="title-questions">我想请教的三个问题</h1><p class="title-en en" lang="en">Three questions I would like to ask</p>
+<div class="content">
+<article class="question"><span class="qnumber">01</span><div><h2 class="zh">目前有五个主体。如果同事已经使用了其中一个，而我对接的 Partner 也需要使用同一个主体，会发生冲突或覆盖吗？</h2><p class="en" lang="en">There are currently five entities. If a colleague is already using one and the partner I am working with needs the same entity, could there be a conflict or would the existing assignment be overridden?</p></div></article>
+<article class="question"><span class="qnumber">02</span><div><h2 class="zh">会议中提到「在哪一个国家开服务器」，是指 AWS Region 吗？</h2><p class="en" lang="en">When someone asks which country the servers will run in, are they referring to the AWS Region?</p></div></article>
+<article class="question"><span class="qnumber">03</span><div><h2 class="zh">会议中是否不可以提及主体或公司的名称？</h2><p class="en" lang="en">Are we expected to avoid mentioning the entity or company name during meetings?</p></div></article>
+</div>
+</section>
+<section class="slide" id="approach" aria-labelledby="title-approach" hidden>
+<div class="section-label"><span class="zh">我的建议</span><span class="en" lang="en">MY PROPOSAL</span></div>
+<h1 class="zh" id="title-approach">如何处理延伸话题</h1><p class="title-en en" lang="en">How I would handle broader discussions</p>
+<p class="intro"><span class="zh">当 Partner 提出基础设施迁移、数据架构或其他服务时，我建议先了解价值，再安排后续评估。</span><span class="en" lang="en">When a partner proposes infrastructure migration, data architecture changes or other services, I would first understand the value and arrange a follow-up review.</span></p>
+<div class="content process">
+<div class="step"><span class="step-number">01</span><div><h2><span class="zh">听取建议</span><span class="en" lang="en">Hear their recommendation</span></h2><p><span class="zh">请对方解释：这个建议能解决什么问题？</span><span class="en" lang="en">Ask which problem the proposal would solve.</span></p></div></div>
+<div class="step"><span class="step-number">02</span><div><h2><span class="zh">了解必要性</span><span class="en" lang="en">Clarify whether it is needed now</span></h2><p><span class="zh">这是当前迁移的必要条件，还是后续可选的改进？</span><span class="en" lang="en">Is it a prerequisite for this migration or an optional improvement for later?</span></p></div></div>
+<div class="step"><span class="step-number">03</span><div><h2><span class="zh">索取书面方案</span><span class="en" lang="en">Request a written proposal</span></h2><p><span class="zh">请对方整理范围、成本及预期收益，方便内部比较。</span><span class="en" lang="en">Request scope, costs and expected benefits for internal comparison.</span></p></div></div>
+<div class="step"><span class="step-number">04</span><div><h2><span class="zh">回到当前重点</span><span class="en" lang="en">Return to the current priority</span></h2><p><span class="zh">记录后续事项，再继续 Claude on Bedrock 的讨论。</span><span class="en" lang="en">Record the follow-up and continue the Claude on Bedrock discussion.</span></p></div></div>
+</div>
+<div class="focus"><span class="zh">保留有价值的建议，同时保持本轮讨论的范围清晰。</span><span class="en" lang="en">Capture useful recommendations while keeping the scope of this phase clear.</span></div>
+<p class="source"><span class="zh">会议参考：Partner 曾延伸讨论数据架构、基础设施及成本优化。字幕细节仍需核实。</span><span class="en" lang="en">Meeting context: partners explored data architecture, infrastructure and cost optimisation. Caption details still need verification.</span></p>
+</section>
+<section class="slide" id="example" aria-labelledby="title-example" hidden>
+<div class="section-label"><span class="zh">Q3 · 基础服务器 / 迁云</span><span class="en" lang="en">Q3 · INFRASTRUCTURE / MIGRATION</span></div>
+<h1 class="zh" id="title-example">我会如何回应 Partner</h1><p class="title-en en" lang="en">How I would respond to the partner</p>
+<div class="content">
+<div class="scenario"><strong><span class="zh">对方提问</span><span class="en" lang="en">PARTNER'S QUESTION</span></strong><span class="zh">「要拿 MAP，是不是应该先把现有服务器迁到 AWS？你们要不要先购买我们的基础设施资源？」</span><span class="en" lang="en">“To qualify for MAP, should you move your existing servers to AWS first? Would you consider purchasing our infrastructure resources?”</span></div>
+<div class="script">
+<div class="script-column zh"><div class="language-label">我的建议回应 · 中文</div><p>我们想听听贵方的专业意见：如果将基础设施一起迁移，整体上是否值得？是否可能获得更合适的 MAP credits 或 funding 支持？</p><p>能否请您提供书面建议，说明迁移范围、成本、预期收益及适用条件，方便我们内部评估？</p><p><em>目前我们希望先聚焦公司的当前方向：Claude on Amazon Bedrock。</em></p></div>
+<div class="script-column english en" lang="en"><div class="language-label">MY PROPOSED RESPONSE · ENGLISH</div><p>We would value your advice on whether migrating the infrastructure alongside the AI workload would be worthwhile, and whether it could open up more suitable MAP credit or funding options.</p><p>Could you share a written recommendation covering the scope, costs, expected benefits and eligibility conditions for our internal review?</p><p><em>For now, we would like to focus on our current priority: Claude on Amazon Bedrock.</em></p></div>
+</div>
+<p class="footnote"><span class="zh">以上是建议话术。MAP 资格、credits 及 funding 均需进一步确认。</span><span class="en" lang="en">Proposed wording. MAP eligibility, credits and funding remain subject to confirmation.</span></p>
+</div>
+</section>
+<section class="slide" id="proposal" aria-labelledby="title-proposal" hidden>
+<div class="section-label"><span class="zh">Q4 / Q5 / Q26 / Q28 · 通用处理建议</span><span class="en" lang="en">Q4 / Q5 / Q26 / Q28 · SHARED APPROACH</span></div>
+<h1 class="zh" id="title-proposal">让书面建议更方便比较</h1><p class="title-en en" lang="en">Make the written proposals easier to compare</p>
+<p class="intro"><span class="zh">我建议请 Partner 按相同项目整理方案，让内部团队更容易判断是否值得继续讨论。</span><span class="en" lang="en">I would ask partners to cover the same points so our internal team can decide which suggestions deserve further discussion.</span></p>
+<div class="content proposal-list">
+<div class="proposal-row"><h2><span class="zh">建议内容</span><span class="en" lang="en">Recommendation</span></h2><p><span class="zh">具体建议做什么？要解决哪个问题？</span><span class="en" lang="en">What do you recommend, and which problem would it solve?</span></p></div>
+<div class="proposal-row"><h2><span class="zh">范围与依赖</span><span class="en" lang="en">Scope and dependencies</span></h2><p><span class="zh">与当前 Claude on Bedrock 计划有什么关系？哪些是必需，哪些是可选？</span><span class="en" lang="en">How does it relate to our Claude on Bedrock plan? What is required and what is optional?</span></p></div>
+<div class="proposal-row"><h2><span class="zh">成本与支持</span><span class="en" lang="en">Costs and support</span></h2><p><span class="zh">预计成本是多少？可能有哪些 credits 或 funding？需要满足什么条件？</span><span class="en" lang="en">What are the estimated costs, potential credits or funding, and the conditions attached?</span></p></div>
+<div class="proposal-row"><h2><span class="zh">投入与收益</span><span class="en" lang="en">Effort and benefits</span></h2><p><span class="zh">需要多久、需要我们配合什么？有哪些收益和风险？</span><span class="en" lang="en">How long would it take, what would our team need to contribute, and what are the benefits and risks?</span></p></div>
+</div>
+<div class="focus"><span class="zh">「请把您的建议整理成一份简短方案，我们会带回内部比较，并跟进需要确认的部分。」</span><span class="en" lang="en">“Could you put your recommendation into a short proposal? We will review it internally and follow up on any open points.”</span></div>
+</section>
+<section class="slide" id="followup" aria-labelledby="title-followup" hidden>
+<div class="section-label"><span class="zh">会议观察与我的跟进建议</span><span class="en" lang="en">MEETING OBSERVATIONS &amp; PROPOSED FOLLOW-UP</span></div>
+<h1 class="zh" id="title-followup">把讨论整理成可跟进的事项</h1><p class="title-en en" lang="en">Turn the discussion into clear follow-up actions</p>
+<div class="content columns">
+<div class="column"><h2><span class="zh">从会议中看到的问题</span><span class="en" lang="en">Questions raised in the meetings</span></h2><ul class="notes"><li><span class="zh">迁移是否只是切换 API endpoint？</span><span class="en" lang="en">Would migration involve only an API endpoint change?</span></li><li><span class="zh">当前 AI 范围需要哪些技术配合？</span><span class="en" lang="en">What technical support does the current AI scope require?</span></li><li><span class="zh">扩大范围、资助条件与时间表如何确认？</span><span class="en" lang="en">How should wider scope, funding conditions and timing be confirmed?</span></li></ul></div>
+<div class="column"><h2><span class="zh">我建议记录的内容</span><span class="en" lang="en">What I would document</span></h2><ul class="notes"><li><span class="zh">双方诉求，以及已确认的讨论范围</span><span class="en" lang="en">Each side's objectives and the agreed discussion scope.</span></li><li><span class="zh">Partner 建议、技术疑问与内部配合事项</span><span class="en" lang="en">Partner recommendations, technical questions and internal support needed.</span></li><li><span class="zh">每项下一步的负责人、交付物与回复日期</span><span class="en" lang="en">An owner, deliverable and response date for each next step.</span></li></ul></div>
+</div>
+<p class="closing"><span class="zh">这样的沟通与跟进方式，是否符合您对这个岗位的期待？</span><span class="en" lang="en">Would this communication and follow-up approach match your expectations for the role?</span></p>
+<p class="source"><span class="zh">会议观察依据所提供的 AI 字幕，作为讨论参考。</span><span class="en" lang="en">Meeting observations are based on the supplied AI captions and serve as discussion context.</span></p>
+</section>
+</main>
+<footer><div class="counter" aria-live="polite"><b id="page-number">01</b> / 05</div><span class="keyboard">← → <span class="zh">切换页面</span><span class="en" lang="en">Navigate</span></span><div class="paging"><button id="previous" type="button" disabled><span class="zh">上一页</span><span class="en" lang="en">Previous</span></button><button id="next" type="button"><span class="zh">下一页</span><span class="en" lang="en">Next</span></button></div></footer>
+</div>
+<div class="progress" aria-hidden="true"><span id="progress-bar" style="width:20%"></span></div>
+<script>
+/* Navigation is local. No external libraries, network requests or account required. */
+const slides = Array.from(document.querySelectorAll('.slide'));
+const links = Array.from(document.querySelectorAll('.nav a'));
+let current = 0;
+function showSlide(index, updateHash = true) {
+  current = Math.max(0, Math.min(index, slides.length - 1));
+  slides.forEach((slide, i) => { slide.hidden = i !== current; });
+  links.forEach((link, i) => {
+    if (i === current) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  });
+  document.querySelector('#page-number').textContent = String(current + 1).padStart(2, '0');
+  document.querySelector('#previous').disabled = current === 0;
+  document.querySelector('#next').disabled = current === slides.length - 1;
+  document.querySelector('#progress-bar').style.width = `${(current + 1) / slides.length * 100}%`;
+  if (updateHash) history.replaceState(null, '', '#' + slides[current].id);
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+links.forEach((link, i) => link.addEventListener('click', event => { event.preventDefault(); showSlide(i); }));
+document.querySelector('#previous').addEventListener('click', () => showSlide(current - 1));
+document.querySelector('#next').addEventListener('click', () => showSlide(current + 1));
+document.addEventListener('keydown', event => {
+  if (event.altKey || event.ctrlKey || event.metaKey || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName) || event.target.isContentEditable) return;
+  if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+    event.preventDefault(); showSlide(current + (event.key === 'ArrowRight' ? 1 : -1));
+  }
+});
+function fromHash() { const index = slides.findIndex(slide => '#' + slide.id === location.hash); showSlide(index < 0 ? 0 : index, false); }
+window.addEventListener('hashchange', fromHash);
+document.querySelector('#language').addEventListener('change', event => {
+  const language = event.target.value;
+  document.body.dataset.language = language;
+  document.documentElement.lang = language === 'en' ? 'en' : 'zh-Hans';
+  slides.forEach(slide => {
+    const title = language === 'en' ? slide.querySelector('.title-en') : slide.querySelector('h1');
+    slide.removeAttribute('aria-labelledby'); slide.setAttribute('aria-label', title.textContent);
+  });
+});
+document.querySelector('#print').addEventListener('click', () => window.print());
+fromHash();
+</script>
+</body>
+</html>
